@@ -1,0 +1,32 @@
+﻿@page "/Elecciones"
+@page "/Elecciones/{MiembrosC:double}/{MiembrosP:double}/{MiembrosS:double}/{MiembrosR:double}/{Votantes:double}"
+
+@using System.Threading;
+@using Entidades;
+@inject IJSRuntime jsRunTime;
+
+
+<div>
+    <label>Hola</label>
+</div>
+
+
+@code {
+
+    [Parameter]
+    public double MiembrosC { get; set; }
+
+    [Parameter]
+    public double MiembrosP { get; set; }
+
+    [Parameter]
+    public double MiembrosS { get; set; }
+
+
+    [Parameter]
+    public double MiembrosR { get; set; }
+
+    [Parameter]
+    public double Votantes { get; set; }
+
+}
