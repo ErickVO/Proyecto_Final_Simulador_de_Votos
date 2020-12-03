@@ -2,7 +2,7 @@
 @page "/{MiembrosC:double}/{MiembrosP:double}/{MiembrosS:double}/{MiembrosR:double}/{Votantes:double}"
 
 @using System.Threading;
-@using Entidades;
+
 @inject IJSRuntime jsRunTime;
 
 <div class="card">
@@ -3690,10 +3690,6 @@
     public double porcientoMiembrosP { get; set; }
     public double porcientoMiembrosS { get; set; }
     public double porcientoMiembrosR { get; set; }
-
-
-    List<Presidentes> Presidente = new List<Presidentes>();
-
 
 
     public Timer Tiempo { get; set; }
